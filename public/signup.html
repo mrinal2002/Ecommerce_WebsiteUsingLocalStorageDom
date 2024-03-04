@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #signupdiv{
+            background-color: rgb(157, 80, 234);
+            height: 95vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerdiv{
+            align-self: center;
+            display: flex;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(232, 191, 191);
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+        h1{
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgb(102, 179, 153);
+        }
+        form{
+            align-self: center;
+            padding-left: 1.4rem;
+        }
+        .logindiv{
+            place-self: end;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>sign up page</h1>
+    <div id="signupdiv">
+        <div class="innerdiv">
+            <form action="" id="formsignup">
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email">
+                <br>
+                <label for="pass">Password</label><br>
+                <input type="password" name="pass" id="pass"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="logindiv">
+                <button style="cursor: pointer;" class="loginbtn">Login Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../db/localstorage.js"></script>
+</html>

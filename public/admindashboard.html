@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .rightcontent{
+            display: none;
+        }
+        .right{
+            display: inline;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Adim dashboard</h1>
+    <div class="container">
+        <div class="leftcontent">
+            <fieldset>
+                <legend>Add Item</legend>
+                <form action="" >
+                    <label for="pname">P name</label>
+                    <input type="text" name="pname" id="pname" required>
+                    <label for="pdesc">P description</label>
+                    <input type="text" name="pdesc" id="pdesc" required>
+                    <label for="price">P price</label>
+                    <input type="text" name="" id="price" required>
+                    <input type="submit" value="Add">
+                </form>
+            </fieldset>
+        </div>
+        <div class="rightcontent">
+            <fieldset>
+                <legend>edit form</legend>
+                <form action="" id="form2">
+                    <label for="pname">P name</label>
+                    <input type="text" name="pname2" id="pname2" required>
+                    <label for="pdesc">P description</label>
+                    <input type="text" name="pdesc2" id="pdesc2" required>
+                    <label for="price">P price</label>
+                    <input type="text" name="price2" id="price2" required>
+                    <input type="submit" value="Update">
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    
+    <br><br>
+</body>
+<script src="../db/admin.js"></script>
+</html>
