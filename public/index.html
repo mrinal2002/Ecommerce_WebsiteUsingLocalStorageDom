@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #logindiv{
+            background-color: rgb(178, 139, 216);
+            height: 95vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerdiv{
+            align-self: center;
+            display: flex;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(187, 177, 177);
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+        h1{
+            text-align: center;
+            margin: 0 auto;
+            background-color: aquamarine;
+        }
+        form{
+            align-self: center;
+            padding-left: 1.4rem;
+        }
+        .signupdiv{
+            place-self: end;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div id="logindiv">
+        <div class="innerdiv">
+            <form id="formlogin">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email"/><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="pass" id="password"/><br><br>
+                <button type="submit" style="cursor: pointer;">Submit</button>
+            </form>
+            <div class="signupdiv">
+                <button style="cursor: pointer;">Sign up</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../db/logindb.js"></script>
+
+</html>
